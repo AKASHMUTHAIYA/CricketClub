@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Club Services</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, rgb(15, 24, 66), #fff);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .navbar {
+        width: 100%;
+        background: rgb(15, 24, 66);
+        overflow: hidden;
+    }
+    
+    .navbar .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    .text .white-text {
+        color: white;
+    }
+    
+    .navbar img {
+        height: 120px;
+    }
+    
+    .navbar .search {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar .search input {
+        border-radius: 25px;
+        text-align: center;
+        padding-right: 40px;
+        height: 50px;
+        margin: -1px;
+        font-size: 20px;
+    }
+    
+    .navbar .search img {
+        position: absolute;
+        right: 10px;
+        height: 30px;
+        width: 40px;
+        border-radius: 30px;
+    }
+    
+    .navbar .menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar .menu li {
+        position: relative;
+    }
+    
+    .navbar .menu > li {
+        float: right;
+    }
+    
+    .navbar .menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .navbar .menu li a:hover {
+        background: skyblue;
+        border-radius: 25px;
+    }
+    
+    #service {
+      padding-top: 0;
+      margin-top: 10px;
+    }
+
+    .service-container {
+      background-color: rgb(15, 24, 66); /* Background color for the entire section */
+      padding: 40px; /* Padding around the grid */
+      border-radius: 10px;
+      margin-top: 50px;
+      color: white; /* Text color for titles and subtitles */
+      height:450px;
+    }
+
+    .section-title,
+    .section-subtitle {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-subtitle {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .text-primary {
+      color: black;
+    }
+
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    /* Grid Styles */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background: white; /* Background color for each service item */
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center align content */
+      color: white; /* Text color */
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+    }
+
+    .media-body {
+      color: black; /* Ensure h5 and p tags are black */
+    }
+
+    .small-image {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      align-items:center;
+    }
+
+    .read-more:hover {
+      background-color: #0056b3;
+    }
+
+    .service-container {
+      background-color: rgb(15, 24, 66); /* Background color for the entire section */
+      padding: 50px; /* Padding around the grid */
+      border-radius: 5px;
+    }
+
+    .section-title,
+    .section-subtitle {
+      text-align: center;
+      margin-bottom: 1.25rem;
+      color: white; /* Title and subtitle color */
+    }
+
+    .section-subtitle {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .text-primary {
+      color: black;
+    }
+
+    .font-weight-bold {
+      font-weight: 700;
+    }
+
+    /* Grid Styles */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background: rgb(15, 24, 66); /* Background color for each service item */
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center align content */
+      color: black; /* Text color */
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+    }
+
+    .media-body {
+      color: white;
+      font-size:25px; /* Ensure h5 and p tags are black */
+    }
+
+    .small-image {
+      width: 100px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .read-more {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="header">
+                    <img src="img/club1.png" alt="logo">
+                    <ul class="menu">
+                        <li><a href='#index.html'>Home</a></li>
+                        <li><a href='formretrieve'>Matches</a></li>
+                        <li><a href='#Spectators'>Audience</a></li>
+                        <li><a href='#foot'>About</a></li>
+                        <li><a href='Admin.html'>AdminLogin</a></li>
+                        <div class="search">
+                            <input type="text" name="name" placeholder="search">
+                            <img src="img/search.png" alt="search icon">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     <center>
+  <section id="service">
+    <div class="service-container">
+      <div class="service-grid">
+        <div class="media service-item">
+          <img class="align-self-center mr-3 small-image" src="img/matchlogo.jpeg" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Match updation</h5>
+            <p>Club cricket is a mainly amateur, but still formal form of the sport of cricket, usually involving teams playing in competitions at weekends or in the evening. There is a great deal of variation in game format although the Laws of Cricket are observed.</p>
+            <button class="read-more" onclick="window.location.href='form1'">Match update</button>
+          </div>
+        </div>
+        <div class="media service-item">
+          <img class="align-self-center mr-3 small-image" src="img/playerlogo.png" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">Player updation</h5>
+            <p class="mb-0">The system which is worked out by doing a series of calculations leading to a sophisticated moving average. Players are rated on a scale of 0 to 1000 points.</p>
+            <button class="read-more" onclick="window.location.href='Newplayerform'">Add new player</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer id="foot" style="background-color: black; color: white; padding: 20px 0; text-align: center; margin-top:50px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <img src="img/club1.png" alt="ST Courier Logo" style="width: 150px;">
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <h3>Training Schedule</h3>
+                    <h3>Stateplayer</h3>
+                    <h3>Divisionplayer</h3>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <h3>Corporate Office</h3>
+                    <p>No: 164, Valluvar Nagar, Kumbakonam, Thanjavur 612204.</p>
+                    <p>Phone: 9489937403</p>
+                    <p>Email: helpsAG@AGclub.com</p>
+                    <p>Monday - Friday: 4.00am to 11.00pm</p>
+                    <p>Saturday and Sunday: 6.00am to 9.30pm</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

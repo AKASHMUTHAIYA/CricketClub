@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Club</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="header">
+                <img src="img/club1.png" alt="logo">
+                <ul class="menu">
+                    <li><a href='#index.html'>Home</a></li>
+                    <li><a href='formretrieve'>Matches</a></li>
+                    <li><a href='#Spectators'>Audience</a></li>
+                    <li><a href='#foot'>About</a></li>
+                    <li><a href='Admin.html'>AdminLogin</a></li>
+                    <div class="search">
+                        <input type="text" name="name" placeholder="search">
+                        <img src="img/search.png" alt="search icon">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+<center>
+    <div class="trending">
+        <img src="img/icc6.jpeg" alt="Image 5">
+        <div class="description">Winning Moments asdfgCongratulations on taking the next step to prepare for your Salesforce Certified MuleSoft Associate credential. This exam guide has the information you need to help you study and prepare for your exam. Let’s get started!</div>
+    </div>
+</center>
+
+ 
+
+    <div id="Player" class="section-block">
+        <div class="text-content">
+            <h2>Player</h2>
+            <p class="desc">View upcoming matches and register for participation.</p>
+            <a href="Newplayerform" class="block">click to register</a>
+           
+        </div>
+        <img src="img/club1.png" alt="Player Image">
+    </div>
+
+    <section>
+        <center><h1>Sponsors</h1></center>
+        <div class="branding-logo">
+            <marquee>
+                <img src="img/brand1.png" alt="Branding Logo">
+                <img src="img/brand2.png" alt="Branding Logo">
+                <img src="img/brand3.png" alt="Branding Logo">
+                <img src="img/brand4.png" alt="Branding Logo">
+                <img src="img/brand5.png" alt="Branding Logo">
+                <img src="img/brand6.png" alt="Branding Logo">
+            </marquee>
+        </div>
+    </section>
+    <section id="service">
+  <div class="service-container">
+    <div class="service-grid">
+      <div class="media service-item">
+        <img class="align-self-center mr-3 small-image" src="img/club1.png" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">Club matches</h5>
+          <p>Club cricket is a mainly amateur, but still formal form of the sport of cricket, usually involving teams playing in competitions at weekends or in the evening. There is a great deal of variation in game format although the Laws of Cricket are observed.</p>
+          <button class="read-more" onclick="window.location.href='formretrieve'">view </button>
+        </div>
+      </div>
+      <div class="media service-item">
+        <img class="align-self-center mr-3 small-image" src="img/icclogo.jpeg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">International Points table</h5>
+          <p class="mb-0">The ICC Player Rankings is a table where international cricket players performances are ranked using a points based system which is worked out by doing a series of calculations leading to a sophisticated moving average. Players are rated on a scale of 0 to 1000 points.</p>
+           <button class="read-more" onclick="window.location.href='https://www.icc-cricket.com/rankings/'">view </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="info-sections">
+    <div id="Spectators" class="info-block">
+        <div class="info-text">
+            <h2>Audience</h2>
+            <p class="info-desc">Stay updated with match info and book your tickets.</p>
+            
+            <a href="Ticketform" class="info-link">Book Tickets</a>
+        </div>
+        <img src="img/aud2.jpeg" alt="Audience Image" class="info-image">
+    </div>
+</section>
+
+
+    <footer id="foot" style="background-color: black; color: white; padding: 20px 0; text-align: center; margin-top:50px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <img src="img/club1.png" alt="ST Courier Logo" style="width: 150px;">
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <h3>Training Schedule</h3>
+                    <h3>Stateplayer</h3>
+                    <h3>Divisionplayer</h3>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 10px;">
+                    <h3>Corporate Office</h3>
+                    <p>No: 164, Valluvar Nagar, Kumbakonam, Thanjavur 612204.</p>
+                    <p>Phone: 9489937403</p>
+                    <p>Email: helpsAG@AGclub.com</p>
+                    <p>Monday - Friday: 4.00am to 11.00pm</p>
+                    <p>Saturday and Sunday: 6.00am to 9.30pm</p>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
